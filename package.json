@@ -1,5 +1,5 @@
 {
-  "name": "chat.io",
+  "name": "chatlab",
   "version": "1.0.0",
   "description": "A Real Time Chat Application built using Node.js, Express, Mongoose, Socket.io, Passport, & Redis.",
   "scripts": {
@@ -7,15 +7,15 @@
     "start": "node server.js"
   },
   "repository": {
-    "url": "git+https://github.com/OmarElGabry/chat.io.git",
+    "url": "git+https://github.com/Dzhan85/chatlab.git",
     "type": "git"
   },
-  "author": "Omar El Gabry <omar.elgabry.93@gmail.com> (http://omarelgabry.me)",
+  "author": "Atadjan K <atakurban@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/OmarElGabry/chat.io/issues"
+    "url": "https://github.com/Dzhan85/chatlab/issues"
   },
-  "homepage": "https://github.com/OmarElGabry/chat.io",
+  "homepage": "https://github.com/Dzhan85/chatlab",
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.15.2",
