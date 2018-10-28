@@ -5,6 +5,8 @@
 
 A Real Time Chat Application built using Node.js, Express, Mongoose, Socket.io, Passport, & Redis.
 
+![Screenshot](https://raw.githubusercontent.com/Dzhan85/chatlab/master/public/img/socket.io.jpeg)
+
 ## Index
 + [Demo](#demo)
 + [Features](#features)
