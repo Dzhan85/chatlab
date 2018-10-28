@@ -1,7 +1,7 @@
 {
-  "name": "chat.io",
+  "name": "chatlab",
   "description": "A Real Time Chat Application built using Node.js, Express, Mongoose, Socket.io, Passport, & Redis.",
   "repository": "https://github.com/Dzhan85/chatlab",
-  "logo": "https://raw.githubusercontent.com/OmarElGabry/chat.io/master/public/img/chat.io.PNG",
+  "logo": "https://raw.githubusercontent.com/Dzhan85/chatlab//master/public/img/chat.io.PNG",
   "keywords": ["real-time", "chat", "nodejs", "express", "mongoose", "socketio", "passport", "redis"]
 }
