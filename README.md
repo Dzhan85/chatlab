@@ -1,9 +1,7 @@
 ![Screenshot](https://raw.githubusercontent.com/OmarElGabry/chat.io/master/public/img/chat.io.gif)
 
-# chat.io
-[![Dependency Status](https://www.versioneye.com/user/projects/57d746d1df40d0004a4a9e21/badge.svg?style=flat-square)](https://www.versioneye.com/user/projects/57d746d1df40d0004a4a9e21)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/OmarElGabry/chat.io/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/OmarElGabry/chat.io/?branch=master)
-[![Code Climate](https://codeclimate.com/github/OmarElGabry/chat.io/badges/gpa.svg)](https://codeclimate.com/github/OmarElGabry/chat.io)
+# chatlab
+
 
 A Real Time Chat Application built using Node.js, Express, Mongoose, Socket.io, Passport, & Redis.
 
@@ -38,8 +36,8 @@ Make sure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.co
 1. Clone or Download the repository
 
 	```
-	$ git clone https://github.com/OmarElGabry/chat.io.git
-	$ cd chat.io
+	$ git clone https://github.com/Dzhan85/chatlab.git
+	$ cd chatlab
 	```
 2. Install Dependencies
 
