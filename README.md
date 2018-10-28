@@ -10,9 +10,7 @@ A Real Time Chat Application built using Node.js, Express, Mongoose, Socket.io, 
 + [Features](#features)
 + [Installation](#installation)
 + [How It Works](#how-it-works)
-+ [Support](#support)
-+ [Contribute](#contribute)
-+ [License](#license)
+
 
 ## Demo<a name="demo"></a>
 Check [Demo](http://chatio.herokuapp.com/)
