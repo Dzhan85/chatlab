@@ -1,4 +1,4 @@
-![Screenshot](https://raw.githubusercontent.com/OmarElGabry/chat.io/master/public/img/chat.io.gif)
+
 
 # chatlab
 
