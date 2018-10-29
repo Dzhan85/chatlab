@@ -29,6 +29,35 @@ Check [Demo](http://chatio.herokuapp.com/)
 + Uses [Redis](https://github.com/antirez/redis) as an Adapter for [Socket.io](https://github.com/socketio/socket.io).
 + Logging Errors and Exceptions using [Winston](https://github.com/winstonjs/winston).
 
+
+Set up Docker for Running Environment
+-----------------------------------------------
+- Download official docker image from docker hub
+```
+$ docker pull node
+$ docker pull redis
+$ docker pull mongo
+```
+- Run mongodb container
+```
+$ docker run --name mongodb --expose 27017 -p 27017:27017 -d mongo
+```
+- Run redis container
+```
+$ docker run --name redis --expose 6379 -p 6379:6379 -d redis
+```
+- Run docker nodejs and link to redis and mongodb
+```
+$ docker run -it --name node --link redis:redis --link mongodb:mongodb -p 3000:3000 -p 8080:8080 -p 8989:8989 -v /path/to/your/working/directory/:/app -d node
+```
+- port 3000: webpack hot reload
+- port 8080: nodejs app
+- port 8989: nodejs debugger port
+- note your node container ID by running `docker ps -a` then run command `docker exec -it <container ID> /bin/bash` (on Mac) to go inside the node container
+- install webpack globally `npm install webpack -g` at the root of the node container
+- change listening port 80 in file app.js at line 46 to 8080 for development environment
+
+
 ## Installation<a name="installation"></a>
 ### Running Locally
 Make sure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed.
