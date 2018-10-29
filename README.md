@@ -49,13 +49,6 @@ $ docker run --name redis --expose 6379 -p 6379:6379 -d redis
 - Run docker nodejs and link to redis and mongodb
 ```
 $ docker run -it --name node --link redis:redis --link mongodb:mongodb -p 3000:3000 -p 8080:8080 -p 8989:8989 -v /path/to/your/working/directory/:/app -d node
-```
-- port 3000: webpack hot reload
-- port 8080: nodejs app
-- port 8989: nodejs debugger port
-- note your node container ID by running `docker ps -a` then run command `docker exec -it <container ID> /bin/bash` (on Mac) to go inside the node container
-- install webpack globally `npm install webpack -g` at the root of the node container
-- change listening port 80 in file app.js at line 46 to 8080 for development environment
 
 
 ## Installation<a name="installation"></a>
@@ -126,25 +119,6 @@ The configurations on production will be assigned from Environment Variables on 
 #### MongoDB & MongoLab
 You need to create a database on MongoLab, then create a database user, get the `MongoDB URI`, and assign it to `dbURI`.
 
-#### Facebook & Twitter
-You need to register a new application on both Facebook and Twitter to get your tokens by which users can grant access to your application, and login using their social accounts.
-
-##### Registering the app on Facebook
-1. Go to [Facebook Developers](https://developers.facebook.com/)
-2. Add new app, and fill the required information.
-3. Get your `App ID`, `App Secret`.
-4. Go to Add Product -> Facebook Login -> Valid OAuth redirect URIs
-5. Add Valid Callback URIs
-6. Go to App Review -> Make your application public.
-
-Now, you can assign the `App ID` to `facebookClientID`, and `App Secret` to `facebookClientSecret`.
-##### Registering the app on Twitter
-1. Go to [Twitter Apps](https://apps.twitter.com/)
-2. Create new app, and fill the required information.
-3. Add Website & Callback URL
-4. Get your `Consumer Key`, `Consumer Secret`.
-
-Now, you can assign the `Consumer Key` to `twitterConsumerKey`, and `Consumer Secret` to `twitterConsumerSecret`.
 
 ##### The Callback URL
 - It can point back to your localhost; _[http://localhost:3000/auth/facebook/callback](http://localhost:3000/auth/facebook/callback)_
