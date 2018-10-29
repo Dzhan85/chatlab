@@ -30,26 +30,6 @@ Check [Demo](http://chatio.herokuapp.com/)
 + Logging Errors and Exceptions using [Winston](https://github.com/winstonjs/winston).
 
 
-Set up Docker for Running Environment
------------------------------------------------
-- Download official docker image from docker hub
-```
-$ docker pull node
-$ docker pull redis
-$ docker pull mongo
-```
-- Run mongodb container
-```
-$ docker run --name mongodb --expose 27017 -p 27017:27017 -d mongo
-```
-- Run redis container
-```
-$ docker run --name redis --expose 6379 -p 6379:6379 -d redis
-```
-- Run docker nodejs and link to redis and mongodb
-```
-$ docker run -it --name node --link redis:redis --link mongodb:mongodb -p 3000:3000 -p 8080:8080 -p 8989:8989 -v /path/to/your/working/directory/:/app -d node
-
 
 ## Installation<a name="installation"></a>
 ### Running Locally
