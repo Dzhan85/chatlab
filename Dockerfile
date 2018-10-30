@@ -1,8 +1,8 @@
-FROM node:argon
+FROM node:
 
-RUN npm install --global gulp
-RUN npm install --global webpack
-RUN npm install --global webpack-dev-server
+RUN npm install --global 
+RUN npm install --global 
+RUN npm install --global
 
 # app main entry port for production
 EXPOSE 80
