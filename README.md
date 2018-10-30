@@ -8,14 +8,10 @@ A Real Time Chat Application built using Node.js, Express, Mongoose, Socket.io, 
 ![Screenshot](https://raw.githubusercontent.com/Dzhan85/chatlab/master/public/img/socket.io.jpeg)
 
 ## Index
-+ [Demo](#demo)
 + [Features](#features)
 + [Installation](#installation)
 + [How It Works](#how-it-works)
 
-
-## Demo<a name="demo"></a>
-Check [Demo](http://chatio.herokuapp.com/)
 
 ## Features<a name="features"></a>
 + Uses Express as the application Framework.
