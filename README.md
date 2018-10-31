@@ -56,35 +56,6 @@ Make sure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.co
 	```
 Your app should now be running on [localhost:3000](http://localhost:3000/).
 
-### Deploying to Heroku
-Make sure you have the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed.
-
-1. Create a new Heroku application, and push your chat application to a Git remote repository
-
-	```
-	$ heroku create
-	$ git push heroku master
-	```
-	
-	or
-	
-	[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
-2. Now, you need to set up configuration variables on Heroku. 
-	1. Go to Settings -> Reveal Config Vars.
-	2. Add configuration variables. All needed variables are inside _app/config/index.js_. 
-	Typically, these are the configuration variables you need to assign: 
-	```{ dbURI, sessionSecret, facebookClientID, facebookClientSecret, twitterConsumerKey, twitterConsumerSecret }```(see [Setup Configurations](#configurations)).
-
-3. One last step is to add [Redis](http://redis.io/) as an Add-on on Heroku.
-	1. Go to Resources -> Add-ons
-	2. Select Heroku Redis
-	> You need to setup a billing account even if the add-on is free.
-4. Open your chat application in the browser
-
-	```
-	$ heroku open
-	```
 
 
 
