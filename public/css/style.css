@@ -55,7 +55,7 @@ body {
   padding-left: 8px;
 }
 .users-list .status {
-  color: #92959E;
+  color: #929545;
 }
 .chat, .room {
   width: 490px;
@@ -277,7 +277,7 @@ ul {
   background-color: #F2F5F8;
 }
 .form input {
-    background-color: white;
+    background-color: blue;
 }
 .form-line {
   position: absolute; 
@@ -338,7 +338,7 @@ a.logout-btn:hover, a.logout-btn:active, a.logout-btn:focus {
   text-decoration: none;
 }
 .message.error {
-  color: red;
+  color: yellow;
 }
 .message.success {
   color: #86BB71;
